@@ -1,12 +1,12 @@
 library(data.table)
 library(dplyr)
 library(qdapTools)
-library(reshape2)
+
 
 #Downloading the data from url mentioned
 #-----------------------------------------
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileUrl,destfile="./data/Dataset.zip",method="curl")
+download.file(fileUrl, destfile="./data/Dataset.zip", method = "curl")
 unzip("./data/Dataset.zip", exdir="./data")
 
 
