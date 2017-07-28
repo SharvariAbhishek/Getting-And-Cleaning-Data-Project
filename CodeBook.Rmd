@@ -1,0 +1,32 @@
+#Getting And Cleaning Course Project
+
+The purpose of this project is to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
+
+As part of this project below has been submitted:
+1. A Tidy dataset
+2. Link to github repo which contains a script `run_analysis.R` with performance analysis.
+3. A codebook having the explaination on project
+
+run_analysis.R script does the following things:
+1. Downloads dataset zip file from the URL [Datase URL](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and unzip the zip file
+2. Merges the training and test data sets using `rbind` and `cbind` to create one dataset
+3. Extracts only the measurements on the mean and standard deviation for each measurement from the dataset.
+4. Uses descriptive names from activity dataset to name the activities in the merged dataset.
+5. Approriately names the merged dataset column names with descriptive variable names.
+6. creates a independent tidy data set with the average of each variable  for each activity and subject in the dataset.
+
+#Variables
+
+- `fileUrl` : URL to download the zip file which contains datasets.
+
+- `path_url` : path to directory containing unzipped datasets.
+
+- `path_train` and `path_test` : path to subdirectories containing train and test datasets. 
+
+- `features`, `activity`, `subject_train`, `subject_test`, `X_train`, `X_test`, `Y_train`, `Y_test` are the datasets extracted from the downloaded files present in the UCI HAR Dataset.
+
+- `X_data`, `Y_data` and `subject_data` are the merged datasets from the individual  training and testing datasets: X, Y, subject.
+
+- `final_data` is the dataset merged using `features`, `subject_data`, `Y_data` and `X_data`.
+
+- `average_data` dataset contains the average of each variable for each activity and subject in the `final_data` dataset. 
