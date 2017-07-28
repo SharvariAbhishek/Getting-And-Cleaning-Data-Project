@@ -1,4 +1,4 @@
-#Getting And Cleaning Course Project
+# Getting And Cleaning Course Project
 
 The purpose of this project is to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
 
@@ -15,7 +15,7 @@ run_analysis.R script does the following things:
 5. Approriately names the merged dataset column names with descriptive variable names.
 6. creates a independent tidy data set with the average of each variable  for each activity and subject in the dataset.
 
-#Variables
+## Variables
 
 - `fileUrl` : URL to download the zip file which contains datasets.
 
